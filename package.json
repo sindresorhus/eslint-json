@@ -1,0 +1,41 @@
+{
+  "name": "eslint-json",
+  "version": "0.0.0",
+  "description": "JSON formatter (reporter) for ESLint",
+  "keywords": [
+    "eslint",
+    "formatter",
+    "reporter",
+    "lint",
+    "validate",
+    "json",
+    "serialize",
+    "bridge"
+  ],
+  "homepage": "https://github.com/sindresorhus/eslint-json",
+  "bugs": "https://github.com/sindresorhus/eslint-json/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "files": [
+    "json.js"
+  ],
+  "main": "json",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sindresorhus/eslint-json.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "eslint": "0.1.0-dev"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
