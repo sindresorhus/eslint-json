@@ -21,6 +21,7 @@
     "url": "http://sindresorhus.com"
   },
   "files": [
+    "index.js",
     "json.js"
   ],
   "repository": {
