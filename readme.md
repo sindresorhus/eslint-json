@@ -26,7 +26,7 @@ eslint --format node_modules/eslint-json/json.js file.js
 grunt.initConfig({
 	eslint: {
 		options: {
-			format: 'node_modules/eslint-json/json.js'
+			format: require('eslint-json')
 		},
 		target: ['file.js']
 	}

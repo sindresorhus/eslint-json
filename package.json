@@ -23,7 +23,6 @@
   "files": [
     "json.js"
   ],
-  "main": "json",
   "repository": {
     "type": "git",
     "url": "git://github.com/sindresorhus/eslint-json.git"
