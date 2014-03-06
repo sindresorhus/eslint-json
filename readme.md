@@ -1,13 +1,15 @@
-# eslint-json [![Build Status](https://secure.travis-ci.org/sindresorhus/eslint-json.png?branch=master)](http://travis-ci.org/sindresorhus/eslint-json)
+# eslint-json [![Build Status](https://travis-ci.org/sindresorhus/eslint-json.png?branch=master)](https://travis-ci.org/sindresorhus/eslint-json)
 
-> JSON formatter (reporter) for [ESLint](https://github.com/nzakas/eslint/)
+> JSON reporter for [ESLint](https://github.com/nzakas/eslint/)
 
 Makes it easy to use ESLint with other tools.
 
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/eslint-json): `npm install --save-dev eslint-json`
+```bash
+$ npm install --save-dev eslint-json
+```
 
 
 ## Getting started
@@ -80,4 +82,4 @@ grunt.registerTask('default', ['eslint']);
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
