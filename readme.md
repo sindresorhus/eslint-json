@@ -1,4 +1,4 @@
-# eslint-json [![Build Status](https://travis-ci.org/sindresorhus/eslint-json.png?branch=master)](https://travis-ci.org/sindresorhus/eslint-json)
+# eslint-json [![Build Status](https://travis-ci.org/sindresorhus/eslint-json.svg?branch=master)](https://travis-ci.org/sindresorhus/eslint-json)
 
 > JSON reporter for [ESLint](https://github.com/nzakas/eslint/)
 
