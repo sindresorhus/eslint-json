@@ -50,24 +50,6 @@ grunt.registerTask('default', ['eslint']);
 			"messages": [
 				{
 					"ruleId": "no-undef",
-					"node": {
-						"type": "Identifier",
-						"name": "require",
-						"range": [
-							27,
-							34
-						],
-						"loc": {
-							"start": {
-								"line": 2,
-								"column": 13
-							},
-							"end": {
-								"line": 2,
-								"column": 20
-							}
-						}
-					},
 					"message": "'require' is not defined.",
 					"line": 2,
 					"column": 13,
