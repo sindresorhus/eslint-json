@@ -2,7 +2,6 @@
 var assert = require('assert');
 var eslint = require('eslint').cli;
 
-
 describe('eslint-json', function () {
 	it('should be used by ESLint', function () {
 		var ret = false;
@@ -12,12 +11,14 @@ describe('eslint-json', function () {
 			if (/{"config"/.test(str)) {
 				ret = true;
 			}
-		}
+		};
 
-		eslint.execute(['--format', './json.js', 'test.js']);
+		eslint.execute({
+			_: ['test.js'],
+			format: 'json.js'
+		});
 
 		console.log = _log;
-
 		assert(ret);
 	});
 });

@@ -12,8 +12,6 @@
     "serialize",
     "bridge"
   ],
-  "homepage": "https://github.com/sindresorhus/eslint-json",
-  "bugs": "https://github.com/sindresorhus/eslint-json/issues",
   "license": "MIT",
   "author": {
     "name": "Sindre Sorhus",
@@ -24,18 +22,15 @@
     "index.js",
     "json.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sindresorhus/eslint-json.git"
-  },
+  "repository": "sindresorhus/eslint-json",
   "scripts": {
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "~1.13.0",
-    "eslint": "0.1.0-dev"
+    "eslint": "^0.6.2",
+    "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }
