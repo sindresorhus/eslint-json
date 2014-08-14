@@ -7,7 +7,7 @@ Makes it easy to use ESLint with other tools.
 
 ## Install
 
-```bash
+```sh
 $ npm install --save-dev eslint-json
 ```
 
@@ -18,8 +18,8 @@ Use it with:
 
 #### ESLint CLI
 
-```
-eslint --format node_modules/eslint-json/json.js file.js
+```sh
+$ eslint --format node_modules/eslint-json/json.js file.js
 ```
 
 #### [grunt-eslint](https://github.com/sindresorhus/grunt-eslint/)
@@ -43,13 +43,13 @@ grunt.registerTask('default', ['eslint']);
 
 ```json
 {
-	"config": {},
 	"results": [
 		{
 			"filePath": "test.js",
 			"messages": [
 				{
 					"ruleId": "no-undef",
+					"severity": 2,
 					"message": "'require' is not defined.",
 					"line": 2,
 					"column": 13,
@@ -64,4 +64,4 @@ grunt.registerTask('default', ['eslint']);
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

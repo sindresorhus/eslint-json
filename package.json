@@ -27,7 +27,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "eslint": "^0.6.2",
+    "eslint": "^0.7.4",
     "mocha": "*"
   },
   "engines": {
