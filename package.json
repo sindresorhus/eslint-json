@@ -1,6 +1,6 @@
 {
   "name": "eslint-json",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "JSON formatter (reporter) for ESLint",
   "keywords": [
     "eslint",
