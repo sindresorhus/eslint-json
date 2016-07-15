@@ -1,9 +1,26 @@
 {
   "name": "eslint-json",
   "version": "1.0.0",
-  "description": "JSON formatter (reporter) for ESLint",
+  "description": "JSON formatter for ESLint",
+  "license": "MIT",
+  "repository": "sindresorhus/eslint-json",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "eslint",
+    "eslint-formatter",
     "formatter",
     "reporter",
     "lint",
@@ -12,25 +29,8 @@
     "serialize",
     "bridge"
   ],
-  "license": "MIT",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "files": [
-    "index.js",
-    "json.js"
-  ],
-  "repository": "sindresorhus/eslint-json",
-  "scripts": {
-    "test": "mocha"
-  },
   "devDependencies": {
-    "eslint": "^0.7.4",
-    "mocha": "*"
-  },
-  "engines": {
-    "node": ">=0.10.0"
+    "ava": "*",
+    "xo": "*"
   }
 }

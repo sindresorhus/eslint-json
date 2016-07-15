@@ -1,34 +1,32 @@
 # eslint-json [![Build Status](https://travis-ci.org/sindresorhus/eslint-json.svg?branch=master)](https://travis-ci.org/sindresorhus/eslint-json)
 
-> JSON reporter for [ESLint](https://github.com/nzakas/eslint/)
+> JSON reporter for [ESLint](http://eslint.org)
 
 Makes it easy to use ESLint with other tools.
 
 
 ## Install
 
-```sh
+```
 $ npm install --save-dev eslint-json
 ```
 
 
-## Getting started
-
-Use it with:
+## Usage
 
 #### ESLint CLI
 
-```sh
-$ eslint --format node_modules/eslint-json/json.js file.js
+```
+$ eslint --format=node_modules/eslint-json file.js
 ```
 
-#### [grunt-eslint](https://github.com/sindresorhus/grunt-eslint/)
+#### [grunt-eslint](https://github.com/sindresorhus/grunt-eslint)
 
 ```js
 grunt.initConfig({
 	eslint: {
 		options: {
-			format: require('eslint-json')
+			format: 'node_modules/eslint-json'
 		},
 		target: ['file.js']
 	}
@@ -42,26 +40,27 @@ grunt.registerTask('default', ['eslint']);
 ## Example output
 
 ```json
-{
-	"results": [
-		{
-			"filePath": "test.js",
-			"messages": [
-				{
-					"ruleId": "no-undef",
-					"severity": 2,
-					"message": "'require' is not defined.",
-					"line": 2,
-					"column": 13,
-					"source": "require"
-				}
-			]
-		}
-	]
-}
+[
+	{
+		"filePath": "/Users/sindresorhus/dev/eslint-json/index.js",
+		"messages":[
+			{
+				"ruleId": "no-warning-comments",
+				"severity": 1,
+				"message": "Unexpected 'todo' comment.",
+				"line": 8,
+				"column": 2,
+				"nodeType": "Line",
+				"source": "\t// TODO: fix this later"
+			}
+		],
+		"errorCount": 0,
+		"warningCount": 1
+	}
+]
 ```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

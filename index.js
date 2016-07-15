@@ -1,1 +1,9 @@
-module.exports = require('path').join(__dirname, 'json.js');
+'use strict';
+module.exports = results => {
+	return JSON.stringify(results, (key, val) => {
+		// filter away the Esprima AST
+		if (key !== 'node') {
+			return val;
+		}
+	});
+};
